@@ -54,7 +54,7 @@ echo -e "\t$1 \\" >> apps.mk
 rm -Rf apps.mk lib
 cat > Android.mk <<EOF
 LOCAL_PATH := \$(my-dir)
-my_archs := arm arm64 x86 x86_64
+my_archs := arm arm66
 my_src_arch := \$(call get-prebuilt-src-arch, \$(my_archs))
 
 EOF
@@ -99,7 +99,7 @@ downloadFromFdroid() {
 #phh's Superuser
 downloadFromFdroid me.phh.superuser
 #Navigation
-downloadFromFdroid net.osmand.plus
+#downloadFromFdroid net.osmand.plus
 #Web browser
 # downloadFromFdroid org.mozilla.fennec_fdroid "Browser2 QuickSearchBox"
 #Calendar
