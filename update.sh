@@ -54,7 +54,7 @@ echo -e "\t$1 \\" >> apps.mk
 rm -Rf apps.mk lib
 cat > Android.mk <<EOF
 LOCAL_PATH := \$(my-dir)
-my_archs := arm arm66
+my_archs := arm arm64
 my_src_arch := \$(call get-prebuilt-src-arch, \$(my_archs))
 
 EOF
